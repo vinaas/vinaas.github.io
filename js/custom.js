@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* MAIN JAVASCRIPT 
+* MAIN JAVASCRIPT
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 (function($) {
@@ -10,7 +10,7 @@
     *****************************/
     $(window).load(function () {
     	//PAGE LOADER
-	    $("#loader").fadeOut(1000);
+	    $("#loader").fadeOut(700);
 	    //PORTFOLIO
 	    var $container = $('#portfolio-container');
 		// initialize
@@ -43,24 +43,24 @@
 			animation: "slide",
 			animationLoop: false,
 			maxItems: numbermaxitems,
-			selector: ".slides > li.blog-post", 
-			itemWidth: 210, 
+			selector: ".slides > li.blog-post",
+			itemWidth: 210,
 			itemMargin: 0,
-			controlNav: false,    
-			minItems: 0,    
-			move: 0, 
+			controlNav: false,
+			minItems: 0,
+			move: 0,
 			slideshow: false
 		});
 		$('#partners-slider').flexslider({
 			animation: "slide",
 			animationLoop: false,
 			maxItems: numbermaxitems,
-			selector: ".slides > li.partners-slide", 
-			itemWidth: 210, 
+			selector: ".slides > li.partners-slide",
+			itemWidth: 210,
 			itemMargin: 0,
-			controlNav: false,    
-			minItems: 0,    
-			move: 0, 
+			controlNav: false,
+			minItems: 0,
+			move: 0,
 			slideshow: false
 		});
 		//ANIMATIONS
@@ -126,11 +126,11 @@
     slider.flexslider({
 		animation: "slide",
 		animationLoop: true,
-		selector: ".slides > li", 
-		controlNav: false,    
+		selector: ".slides > li",
+		controlNav: false,
 		slideshowSpeed: 10000,
 		slideshow: true,
-		keyboard: true,   
+		keyboard: true,
 		directionNav: false,
     	controlsContainer: ".navigation-slider-container"
 	});
@@ -145,7 +145,7 @@
     $('.flexslider.image-slider').flexslider({
 		animation: "slide",
 		animationLoop: false,
-		selector: ".slides > li",    
+		selector: ".slides > li",
 		slideshow: false
 	});
     /*SEARCH FORM*/
@@ -182,20 +182,20 @@
 	    }
 	    if (scroll > ($("#header").height() -20)) {
 			$("#header.small #navigation").addClass('navigation-fixed');
-	    } 
+	    }
 	    else{
 			$("#header.small #navigation").removeClass('navigation-fixed');
 	    }
 	    if (scroll > 20 & scroll < ($("#header").height() -20)) {
 	        $("#header.small #navigation").fadeOut("100");
 	    } else {
-		    $('#header.small #navigation').fadeIn("1000"); 
+		    $('#header.small #navigation').fadeIn("1000");
 	    }
 
 	    if (scroll > 60 & scroll < $(window).height()) {
 	        $("#header.big #navigation").fadeOut("100");
 	    } else {
-		    $('#header.big #navigation').fadeIn("1000"); 
+		    $('#header.big #navigation').fadeIn("1000");
 	    }
 	}
 })(jQuery);
