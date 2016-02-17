@@ -10,7 +10,7 @@
     *****************************/
     $(window).load(function () {
     	//PAGE LOADER
-	    $("#loader").fadeOut(700);
+	    // $("#loader").fadeOut(700);
 	    //PORTFOLIO
 	    var $container = $('#portfolio-container');
 		// initialize
